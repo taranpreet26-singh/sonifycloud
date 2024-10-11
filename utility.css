@@ -1,0 +1,28 @@
+.invert{
+    filter: invert(1);
+}
+
+.bg-grey{
+    background-color: #121212;
+}
+
+.m-1{
+    margin: 6px;
+}
+
+.p-1{
+    padding: 8px;
+}
+
+.border{
+    border-radius: 8px;
+}
+
+.icon-width{
+    width: 20px;
+}
+
+
+.player-icon-width{
+    width: 30px;
+}

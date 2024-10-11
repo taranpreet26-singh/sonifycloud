@@ -1,0 +1,467 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.page {
+    display: flex;
+    gap: 5px;
+}
+
+body {
+    color: whitesmoke;
+    background-color: black;
+}
+
+.left {
+    width: 20%;
+    background-color: black;
+
+    height: 96vh;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.container-logo-cancel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right {
+    width: 80%;
+    background-color: black;
+    min-height: 96vh;
+    position: relative;
+}
+
+.logo img {
+    width: 87px;
+    height: 67px;
+    object-fit: cover;
+    filter: invert();
+}
+
+.home ul li {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: aqua;
+    /* margin: 6px;
+    border-radius: 8px;
+    padding: 8px; */
+}
+
+
+.home ul li img {
+    width: 20px;
+    margin-top: 8px;
+}
+
+.library{
+    min-height: 74.6vh;
+    position: relative;
+}
+
+
+.library-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.con1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* position: absolute;
+    bottom: 55px; */
+}
+
+.footer {
+    min-height: 21vh;
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+}
+
+.links div {
+    font-size: 14px;
+}
+
+.links div a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.btn {
+    display: flex;
+    width: max-content;
+    border: 2px solid whitesmoke;
+    padding: 5px;
+    gap: 8px;
+    border-radius: 20px;
+    margin-top: 20px;
+    /* position: absolute;
+    bottom: 10px; */
+}
+
+.header div img {
+    border-radius: 20px;
+    padding: 8px;
+    width: 16px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header div {
+    display: flex;
+    margin: 5px;
+    border-radius: 60px;
+}
+
+.header div div {
+    background-color: black;
+}
+.header div div:hover {
+    transform: scale(1.2);
+}
+
+
+
+.buttons {
+    display: flex;
+    gap: 25px;
+}
+
+.buttons button {
+    width: 6vw;
+}
+
+.singUp {
+    background-color:black;
+    color: whitesmoke;
+    border-radius: 40px;
+}
+
+.singUp:hover {
+    transform: scale(1.1);
+    transition: ease-in-out;
+}
+
+.logIn:hover {
+    transform: scale(1.1);
+    transition: ease-in-out;
+}
+
+
+.logIn {
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 40px;
+}
+
+.spotift-playlist{
+    background-color: #191919;
+    border-radius: 6px;
+    padding: 0 16px 10px;
+    max-height: 88vh;
+    overflow-y: scroll;
+}
+.spotift-playlist::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+
+.list-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    border-radius: 6px;
+}
+
+.card{
+    width: max-content;
+    background-color: #262323;
+    padding: 10px;
+    margin: 6px;
+    border-radius: 10px;
+    display: flex;
+    cursor: pointer;
+}
+
+.card-container{
+    display: flex;
+    padding:  10vh 0px;
+    flex-wrap: wrap;
+}
+
+.card-pic{
+    width: 16vw;
+    border-radius: 80px;
+    height: 40vh;
+    object-fit: cover;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card div{
+    position: relative;
+}
+
+.play-button{
+    width: 36px;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    opacity: 0;
+}
+
+.card-pic:hover + .play-button{
+    animation: play-button-icon ease-in-out 3s forwards;
+}
+
+@keyframes play-button-icon {
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+} 
+
+.card:hover{
+    background: linear-gradient(180deg, #5d5b5f, #393658);
+    width: max-content;
+}
+
+.play-bar{
+    position: fixed;
+    bottom: 20px;
+    background-color: #262323;
+    width: 77%;
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.music-list ul{
+    overflow-y: scroll;
+    max-height: 44.8vh;
+    padding: 4px;
+    border-radius: 10px;
+    box-shadow: inset rgb(56, 53, 59) 0px 0px 40px 0px;
+}
+
+
+.music-list ul::-webkit-scrollbar{
+    display: none;
+}
+
+
+.music-list ul li{
+    margin: 5px;
+    text-wrap: wrap;
+    text-align: start;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #262323;
+    padding: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.music-list ul li:hover{
+    animation: backgroundAnimation 5s ease-in-out infinite ;
+    background: linear-gradient(270deg,#393658,lightgreen);
+    background-size: 200% 50%;
+}
+
+@keyframes backgroundAnimation {
+    0%{
+        background-position: 50% 100%;
+        background-size: 10% 10%;
+    }
+   
+
+    100%{
+        background-size: 200% 100%;
+        background-position: 20% 20%;
+    }
+}
+
+.music-list ul li img{
+    background-color: #5d5b5f;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.seek-bar{
+    border: 2px solid #191919;
+    border-radius: 15px;
+    position: relative;
+}
+.music-name{
+    text-wrap: wrap;
+    width: 20%;
+    text-align: justify;
+    font-size: 12px;
+}
+
+.controller{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-right: 80px;
+}
+
+.operator{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 10px;
+}
+
+.controller img{
+    cursor: pointer;
+}
+
+.duration{
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+}
+.circle{
+    background-color: #5d5b5f;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    position: relative;
+    left: 0%;
+    transition:0.3s ease-in-out;
+}
+
+.hamburger{
+    display: none;
+}
+
+.cancel{
+    display: none;
+}
+@media screen and (max-width:1500px) {
+   .left{
+    position: absolute;
+    left: -100%;
+    width: 40%;
+    transition: all ease-in-out 1s;
+    z-index: 2;
+    height: 100%;
+   }
+   .right{
+    width: 100%;
+   }
+   .play-bar{
+    width: 97%;
+   }
+   .hamburger{
+    display: block;
+   }
+
+   .cancel{
+    display: block;
+   }
+   .footer{
+    min-height: 28vh;
+   }
+   
+   
+}
+
+@media screen and (max-width:500px) {
+    .left{
+     position: absolute;
+     left: -100%;
+     width: 60%;
+     height: 100%;
+     transition: all ease-in-out 1s;
+     z-index: 2;
+    }
+    .right{
+     width: 100%;
+    }
+    .play-bar{
+     width: 90%;
+    }
+    .hamburger{
+     display: block;
+    }
+ 
+    .cancel{
+     display: block;
+    }
+    .footer{
+     min-height: 28vh;
+    }
+    .card{
+        width: 30vw;
+        justify-content: center;
+        align-items: center;
+        height: 23vh;
+    }
+    .card-pic{
+        width: 30vw;
+        border-radius: 80px;
+    }
+    .operator{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .controller{
+        align-items: center;
+        margin: 10px;
+        justify-content: center;
+    }
+    .music-name{
+        width: max-content;
+        text-wrap: wrap;
+    }
+    
+    
+ }
